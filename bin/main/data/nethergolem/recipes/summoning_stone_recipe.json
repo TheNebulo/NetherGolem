@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "n/n",
+        "/D/",
+        "n/n"
+    ],
+    "key": {
+        "n": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "/": {
+            "item": "minecraft:blaze_rod"
+        },
+        "D": {
+            "item": "minecraft:dragon_egg"
+        }
+    },
+    "result": {
+        "item": "nethergolem:summoning_stone"
+    },
+    "group": "miscellaneous"
+}
