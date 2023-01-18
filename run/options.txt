@@ -38,7 +38,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","fabric"]
+resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
