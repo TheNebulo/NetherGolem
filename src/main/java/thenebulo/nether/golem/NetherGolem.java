@@ -16,13 +16,13 @@ public class NetherGolem implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("nethergolem");
-	public static final Item SUMMONING_STONE = new SummoningStone(new FabricItemSettings().fireproof().rarity(Rarity.EPIC));
+	public static final Item SUMMONING_STONE = new SummoningStone(new FabricItemSettings().fireproof().rarity(Rarity.EPIC).maxCount(1));
 
 	@Override
 	public void onInitialize() {
 		thenebulo.nether.golem.particle.ModParticles.registerParticles();
 		Registry.register(Registries.ITEM, new Identifier("nethergolem", "summoning_stone"), SUMMONING_STONE);
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(content -> {
 			content.add(SUMMONING_STONE);
 		});
 	}
