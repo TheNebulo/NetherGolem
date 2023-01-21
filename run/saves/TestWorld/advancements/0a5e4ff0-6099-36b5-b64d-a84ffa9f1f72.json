@@ -1,0 +1,16 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:swamp": "2023-01-20 19:24:44 +0100",
+      "minecraft:forest": "2023-01-20 19:56:49 +0100"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2023-01-20 19:24:41 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3218
+}

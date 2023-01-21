@@ -3,9 +3,7 @@ package thenebulo.nether.golem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.item.*;
-import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.registry.*;
@@ -22,13 +20,11 @@ public class NetherGolem implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		Registry.register(Registries.PARTICLE_TYPE, new Identifier("nethergolem", "green_flame"), GREEN_FLAME);
+		thenebulo.nether.golem.particle.ModParticles.registerParticles();
 		Registry.register(Registries.ITEM, new Identifier("nethergolem", "summoning_stone"), SUMMONING_STONE);
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {
 			content.add(SUMMONING_STONE);
 		});
 	}
-	
-	public static final DefaultParticleType GREEN_FLAME = FabricParticleTypes.simple();
 
 }

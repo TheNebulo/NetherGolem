@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2023-01-20 22:04:18 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:windswept_hills": "2023-01-20 22:04:21 +0100",
+      "minecraft:swamp": "2023-01-20 17:56:11 +0100"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2023-01-20 17:56:08 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3218
+}
